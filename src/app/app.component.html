@@ -1,21 +1,93 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!--header-start-->
+<header class="header" id="header">
+  <div class="overlay"></div>
+  <div class="container">
+    <figure class="logo animated fadeInDown delay-07s">
+      <a href="#"><img src="/assets/img/nccsoft-logo.png" alt=""></a>
+    </figure>
+    <h1 class="animated fadeInDown delay-07s">Welcome To NCC Tour of Heroes</h1>
+    <ul class="we-create animated fadeInUp delay-1s">
+      <li>We are a skilled team of professionals in the field of software development.</li>
+    </ul>
+    <a class="servicelink animated fadeInUp delay-1s btn btn-success" href="#service">Get Started</a>
+  </div>
+</header>
+<!--header-end-->
+
+<!--main-nav-start-->
+<nav class="main-nav-outer" id="test">
+  <div class="container">
+    <ul class="main-nav">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li class="small-logo">
+        <a href="#header"><img src="/assets/img/nccsoft-logo-black.png" alt=""></a>
+      </li>
+      <li><a href="#client">Clients</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!--main-nav-end-->
+
+<section class="main-section" id="service">
+  <!--main-section-start-->
+  <div class="container">
+    <h2>Services</h2>
+    <h6 class="mb-5">We offer exceptional service with complimentary hugs.</h6>
+
+    <div class="row pt-5">
+      <div class="col-lg-4 col-sm-6 animated fadeInLeft delay-05s">
+
+        <div class="service-list">
+          <div class="service-list-col1">
+            <i class="fas fa-gear"></i>
+          </div>
+          <div class="service-list-col2">
+            <h3>web development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        
+        <div class="service-list">
+          <div class="service-list-col1">
+            <i class="fas fa-apple"></i>
+          </div>
+          <div class="service-list-col2">
+            <h3>Mobile app development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="service-list">
+          <div class="service-list-col1">
+            <i class="fas fa-paw"></i>
+          </div>
+          <div class="service-list-col2">
+            <h3>Game development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="service-list">
+          <div class="service-list-col1">
+            <i class="fas fa-medkit"></i>
+          </div>
+          <div class="service-list-col2">
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="col-lg-8 col-sm-6 text-right animated fadeInUp delay-02s">
+        <img src="/assets/img/macbook-pro.png" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+<!--main-section-end-->
 
 <router-outlet></router-outlet>
